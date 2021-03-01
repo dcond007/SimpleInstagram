@@ -42,6 +42,10 @@ Simple Instagram is a photo sharing app similar to Instagram but using Parse as 
 
 Time spent: 6 hours spent in total
 
+
+
+## Part 1 
+
 ## User Stories
 
 The following **required** functionality is completed:
