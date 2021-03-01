@@ -12,6 +12,8 @@ public class Post extends ParseObject {
     public static final String KEY_DESCRIPTION = "description";
     public static final String KEY_IMAGE = "image";
     public static final String KEY_USER = "user";
+    public static final String KEY_CREATED = "createdAt";
+    public static final String KEY_TIMESTAMP = "updatedAt";
 
     // Ensure that your subclass has a public default constructor
     public Post(){}
@@ -38,5 +40,12 @@ public class Post extends ParseObject {
     }
     public void setUser(ParseUser parseUser) {
         put(KEY_USER, parseUser);
+    }
+
+    public void setTimeStamp(String timeStamp){
+        put(KEY_TIMESTAMP, timeStamp);
+    }
+    public String getTimestamp() {
+        return getString(KEY_TIMESTAMP);
     }
 }
